@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  output: "export",
+  trailingSlash: true,
 
-module.exports = nextConfig
+  // If you use next/image, static export can't use the default image optimizer.
+  images: { unoptimized: true },
+};
+
+module.exports = nextConfig;
