@@ -1,0 +1,4 @@
+example\ screenshots/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+example\ screenshots/**/*.png filter=lfs diff=lfs merge=lfs -text
+example[[:space:]]screenshots/**/*.mp4 filter=lfs diff=lfs merge=lfs -text
+example[[:space:]]screenshots/**/*.png filter=lfs diff=lfs merge=lfs -text

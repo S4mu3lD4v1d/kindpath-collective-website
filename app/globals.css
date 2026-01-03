@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #1f2937;
+  background: #f7fbf9;
+}
+
+body {
+  background: #f7fbf9;
+  color: #1f2937;
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-manrope), var(--font-inter), system-ui, sans-serif;
+  color: #0f766e;
+}
+
+a {
+  color: #0f766e;
+}
+
+.card {
+  @apply rounded-2xl border border-[#e3f2ef] bg-white shadow-soft;
+}
