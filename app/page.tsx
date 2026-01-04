@@ -61,9 +61,27 @@ export default function Home() {
       </section>
 
       <section className="max-w-6xl mx-auto px-4 pb-16">
-        <header className="text-center mb-8">
-          <h2 className="text-3xl font-semibold text-forest md:text-4xl">What we&apos;re building</h2>
-          <p className="mt-3 text-base text-[color:var(--kp-slate-600)]">A suite of tools for sovereignty, clarity, and ethical forecasting.</p>
+        <header className="mb-8 mt-12">
+          <div className="flex items-center justify-center gap-6">
+            <img
+              src="/brand/collective-mark-128.png"
+              alt="KindPath mark"
+              className="hidden sm:block h-14 w-14 rounded-full opacity-90"
+            />
+            <div className="text-center">
+              <h2 className="text-2xl sm:text-3xl font-semibold text-[color:var(--kp-ink)]">
+                What we&apos;re building
+              </h2>
+              <p className="mt-2 text-sm text-[color:var(--kp-ink)]/70">
+                A suite of tools for sovereignty, clarity, and ethical forecasting.
+              </p>
+            </div>
+            <img
+              src="/brand/kindearth-mark.svg"
+              alt="KindEarth mark"
+              className="hidden sm:block h-14 w-14 opacity-90"
+            />
+          </div>
         </header>
         <div className="grid gap-6 md:grid-cols-2">
           {tools.map((tool) => (

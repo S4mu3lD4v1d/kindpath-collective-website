@@ -11,7 +11,14 @@ export default function Platform() {
       <div className="max-w-6xl mx-auto px-4 py-14 space-y-12">
         <header className="text-center space-y-3">
           <p className="text-xs font-semibold text-amber uppercase tracking-wide">Platform</p>
-          <h1 className="text-4xl font-semibold text-forest">KindEarth Platform</h1>
+          <div className="flex items-center justify-center gap-4">
+            <img
+              src="/brand/kindearth-mark.svg"
+              alt="KindEarth mark"
+              className="h-12 w-12 opacity-90"
+            />
+            <h1 className="text-4xl font-semibold text-forest">KindEarth Platform</h1>
+          </div>
           <p className="text-lg text-[color:var(--kp-slate-600)]">
             A digital-native platform for modelling policy stress, ecological constraint, and field coherence — and supporting sovereignty-first pilots.
           </p>
