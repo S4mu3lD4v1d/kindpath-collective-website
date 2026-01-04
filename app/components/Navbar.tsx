@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-30 border-b border-[color:var(--kp-mist)] bg-white/95 backdrop-blur">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-        <Link href="/" className="text-lg font-semibold text-river hover:text-forest">
+        <Link href="/" className="text-lg font-semibold text-[color:var(--kp-moss)] hover:text-[color:var(--kp-amber)]">
           KindPath Collective
         </Link>
         <nav className="hidden md:flex items-center space-x-6 text-sm text-[color:var(--kp-slate-600)]">
@@ -20,7 +20,7 @@ export default function Navbar() {
             <Link
               key={href}
               href={href}
-              className="transition hover:text-river"
+              className="transition hover:text-[color:var(--kp-amber)]"
             >
               {label}
             </Link>
@@ -28,7 +28,7 @@ export default function Navbar() {
         </nav>
         <Link
           href="/join-pilot"
-          className="rounded-full bg-amber px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-forest"
+          className="rounded-full bg-[color:var(--kp-amber)] px-4 py-2 text-sm font-semibold text-white shadow-soft transition hover:bg-[color:var(--kp-moss)]"
         >
           Join the Pilot
         </Link>

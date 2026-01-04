@@ -11,7 +11,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto px-4 py-14 space-y-10">
         <header className="text-center space-y-3">
           <p className="text-xs font-semibold text-amber uppercase tracking-wide">Projects</p>
-          <h1 className="text-4xl font-semibold text-river">Proof of Build</h1>
+          <h1 className="text-4xl font-semibold text-[color:var(--kp-moss)]">Proof of Build</h1>
           <p className="text-lg text-[color:var(--kp-slate-600)]">
             These projects document the living build: platform development, pilot scaffolds, and open collaboration artefacts.
             We share progress carefully and favour integrity over hype.
@@ -52,12 +52,12 @@ export default function Projects() {
             },
           ].map((project) => (
             <div key={project.title} className="card p-6 space-y-3">
-              <h2 className="text-xl font-semibold text-river">{project.title}</h2>
+              <h2 className="text-xl font-semibold text-[color:var(--kp-moss)]">{project.title}</h2>
               <p className="text-sm text-[color:var(--kp-slate-600)]">{project.body}</p>
               <p className="text-xs font-semibold uppercase tracking-wide text-amber">Status: {project.status}</p>
               <a
                 href={project.cta.href}
-                className="inline-flex w-fit items-center rounded-full border border-river/30 px-4 py-2 text-sm font-semibold text-river hover:border-river"
+                className="inline-flex w-fit items-center rounded-full border border-[color:rgba(54,63,24,0.3)] px-4 py-2 text-sm font-semibold text-[color:var(--kp-moss)] hover:border-[color:var(--kp-moss)]"
               >
                 {project.cta.label}
               </a>

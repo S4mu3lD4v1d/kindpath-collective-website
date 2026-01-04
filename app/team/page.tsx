@@ -11,7 +11,7 @@ export default function Team() {
       <div className="max-w-6xl mx-auto px-4 py-14 space-y-12">
         <header className="text-center space-y-3">
           <p className="text-xs font-semibold text-amber uppercase tracking-wide">Team</p>
-          <h1 className="text-4xl font-semibold text-river">KindPath Collective</h1>
+          <h1 className="text-4xl font-semibold text-[color:var(--kp-moss)]">KindPath Collective</h1>
           <p className="text-lg text-[color:var(--kp-slate-600)]">
             KindPath Collective is founded and led in Australia by a small team building a sovereignty-first platform for ethical pilots and prevention economics.
           </p>
@@ -45,10 +45,10 @@ export default function Team() {
             },
           ].map((member) => (
             <div key={member.name} className="card p-6 text-center">
-              <div className="mx-auto mb-4 flex h-28 w-28 items-center justify-center rounded-full bg-[color:var(--kp-fog)] text-3xl text-river">
+              <div className="mx-auto mb-4 flex h-28 w-28 items-center justify-center rounded-full bg-[color:var(--kp-fog)] text-3xl text-[color:var(--kp-moss)]">
                 {member.initials}
               </div>
-              <h2 className="text-2xl font-semibold text-river">{member.name}</h2>
+              <h2 className="text-2xl font-semibold text-[color:var(--kp-moss)]">{member.name}</h2>
               <p className="text-ochre font-semibold mb-3">{member.role}</p>
               <h3 className="text-sm font-semibold text-[color:var(--kp-slate-700)] mb-2">{member.focus}</h3>
               <ul className="space-y-1 text-left text-sm text-[color:var(--kp-slate-700)]">
@@ -61,13 +61,13 @@ export default function Team() {
         </section>
 
         <section className="text-center space-y-4">
-          <h2 className="text-2xl font-semibold text-river">Seeking Collaborators</h2>
+          <h2 className="text-2xl font-semibold text-[color:var(--kp-moss)]">Seeking Collaborators</h2>
           <p className="text-base text-[color:var(--kp-slate-600)]">
             We are actively looking for mission-aligned collaborators to help scale our impact.
           </p>
           <div className="grid gap-3 md:grid-cols-3">
             {['Full-stack Engineers (Rust/React)', 'Systems Ecologists', 'Pilot Coordinators'].map((role) => (
-              <div key={role} className="card p-4 text-sm font-semibold text-river shadow-none border-[color:var(--kp-fog)]">
+              <div key={role} className="card p-4 text-sm font-semibold text-[color:var(--kp-moss)] shadow-none border-[color:var(--kp-fog)]">
                 {role}
               </div>
             ))}

@@ -38,7 +38,7 @@ export default function Home() {
           Pilot Program Open
         </span>
         <h1 className="mt-6 text-4xl leading-tight font-semibold text-forest md:text-5xl md:leading-snug">
-          <span className="text-river">KindPath Collective</span> is building KindEarth — a digital platform for
+          <span className="text-[color:var(--kp-moss)]">KindPath Collective</span> is building KindEarth — a digital platform for
           ethical social-policy forecasting and community-led pilots.
         </h1>
         <p className="mt-5 text-lg text-[color:var(--kp-slate-600)] md:text-xl">
@@ -99,20 +99,20 @@ export default function Home() {
 
       <section className="max-w-6xl mx-auto px-4 pb-16">
         <div className="card flex flex-col items-center gap-4 p-10 text-center">
-          <h3 className="text-3xl font-semibold text-river">Proof of Build</h3>
+          <h3 className="text-3xl font-semibold text-[color:var(--kp-moss)]">Proof of Build</h3>
           <p className="text-base text-[color:var(--kp-slate-600)]">
             We operate with transparency. Explore our code and documentation.
           </p>
           <div className="flex flex-col gap-3 md:flex-row">
             <a
               href="https://github.com/kindpath"
-              className="rounded-full border border-river/30 px-5 py-3 text-sm font-semibold text-river transition hover:border-river hover:text-river"
+              className="rounded-full border border-[color:rgba(54,63,24,0.3)] px-5 py-3 text-sm font-semibold text-[color:var(--kp-moss)] transition hover:border-[color:var(--kp-moss)] hover:text-[color:var(--kp-amber)]"
             >
               GitHub Repo KPTH
             </a>
             <a
               href="/platform"
-              className="rounded-full border border-river/30 px-5 py-3 text-sm font-semibold text-river transition hover:border-river hover:text-river"
+              className="rounded-full border border-[color:rgba(54,63,24,0.3)] px-5 py-3 text-sm font-semibold text-[color:var(--kp-moss)] transition hover:border-[color:var(--kp-moss)] hover:text-[color:var(--kp-amber)]"
             >
               Architecture + Roadmap
             </a>
@@ -133,7 +133,7 @@ export default function Home() {
       </section>
 
       <section className="max-w-6xl mx-auto px-4 py-14 text-center">
-        <h3 className="text-2xl font-semibold text-river">Ready to explore ethical pilots?</h3>
+        <h3 className="text-2xl font-semibold text-[color:var(--kp-moss)]">Ready to explore ethical pilots?</h3>
         <p className="mt-3 text-base text-[color:var(--kp-slate-600)]">
           If you&apos;re exploring pilots, evaluation, collaboration, or partnership — join the pilot interest list.
         </p>

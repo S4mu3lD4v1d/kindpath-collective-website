@@ -61,3 +61,23 @@ a {
 .text-slate-700 {
   color: var(--kp-slate-700);
 }
+
+:root{
+  --kp-deep:#232912;
+  --kp-moss:#363F18;
+  --kp-amber:#B37210;
+  --kp-ink:#2B3236;
+  --kp-mist:#F3E9D4;
+}
+
+html, body{
+  background: var(--kp-mist);
+  color: var(--kp-ink);
+}
+
+a{
+  color: var(--kp-moss);
+}
+a:hover{
+  color: var(--kp-amber);
+}

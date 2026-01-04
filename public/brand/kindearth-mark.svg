@@ -1,80 +1,40 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="KindEarth mark">
-  <!-- Hybrid style: flat fills + bold outline, no gradients, no CSS vars -->
-  <!-- Palette:
-       Forest:  #1F2812
-       Amber:   #B37517
-       Slate:   #2B3236
-       Ocean1:  #7FC7DA
-       Ocean2:  #BFEAF2
-  -->
+  <!-- Palette tuned to your tiles -->
+  <!-- Deep: #232912  Moss: #363F18  Amber: #B37210  Ink: #2B3236  Mist: #F3E9D4 -->
+  <circle cx="256" cy="256" r="240" fill="#232912"/>
+  <circle cx="256" cy="256" r="190" fill="#363F18"/>
 
-  <!-- Ocean -->
-  <circle cx="256" cy="256" r="240" fill="#7FC7DA"/>
-  <circle cx="256" cy="256" r="190" fill="#BFEAF2"/>
-
-  <!-- Land (stylised Asia–Pacific, cartoon-ish but tidy) -->
-  <!-- Asia blob -->
-  <path d="M92,145
-           C122,98 176,74 232,74
-           C276,74 310,88 326,114
-           C342,140 330,172 302,190
-           C282,202 268,214 260,232
-           C246,262 214,278 178,268
-           C150,260 134,248 118,226
+  <!-- Land (stylised Asia–Pacific) -->
+  <path d="M92,145 C122,98 176,74 232,74 C276,74 310,88 326,114
+           C342,140 330,172 302,190 C282,202 268,214 260,232
+           C246,262 214,278 178,268 C150,260 134,248 118,226
            C94,194 72,174 92,145 Z"
-        fill="#1F2812" stroke="#2B3236" stroke-width="10" stroke-linejoin="round"/>
+        fill="#F3E9D4" stroke="#2B3236" stroke-width="10" stroke-linejoin="round"/>
 
-  <!-- Japan / north islands -->
-  <path d="M340,120
-           C360,110 378,118 386,134
-           C394,150 386,168 366,176
-           C346,184 332,170 328,154
-           C324,138 324,128 340,120 Z"
-        fill="#1F2812" stroke="#2B3236" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M340,120 C360,110 378,118 386,134 C394,150 386,168 366,176
+           C346,184 332,170 328,154 C324,138 324,128 340,120 Z"
+        fill="#F3E9D4" stroke="#2B3236" stroke-width="8" stroke-linejoin="round"/>
 
-  <!-- SE Asia peninsula -->
-  <path d="M165,242
-           C190,226 220,236 230,258
-           C240,280 226,306 202,322
-           C176,340 152,322 146,300
-           C140,278 142,258 165,242 Z"
-        fill="#1F2812" stroke="#2B3236" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M165,242 C190,226 220,236 230,258 C240,280 226,306 202,322
+           C176,340 152,322 146,300 C140,278 142,258 165,242 Z"
+        fill="#F3E9D4" stroke="#2B3236" stroke-width="10" stroke-linejoin="round"/>
 
-  <!-- Indonesia-ish chain -->
-  <path d="M236,296
-           C260,286 286,292 294,308
-           C302,324 284,340 260,344
+  <path d="M236,296 C260,286 286,292 294,308 C302,324 284,340 260,344
            C236,348 224,312 236,296 Z"
-        fill="#1F2812" stroke="#2B3236" stroke-width="8" stroke-linejoin="round"/>
+        fill="#F3E9D4" stroke="#2B3236" stroke-width="8" stroke-linejoin="round"/>
 
-  <path d="M300,312
-           C318,304 340,310 346,324
-           C352,338 338,352 320,354
+  <path d="M300,312 C318,304 340,310 346,324 C352,338 338,352 320,354
            C302,356 292,328 300,312 Z"
-        fill="#1F2812" stroke="#2B3236" stroke-width="8" stroke-linejoin="round"/>
+        fill="#F3E9D4" stroke="#2B3236" stroke-width="8" stroke-linejoin="round"/>
 
-  <path d="M350,334
-           C366,328 384,336 388,350
-           C392,364 380,376 364,376
-           C348,376 340,350 350,334 Z"
-        fill="#1F2812" stroke="#2B3236" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M362,288 C394,274 428,290 436,318 C444,346 422,370 392,374
+           C362,378 342,358 338,336 C334,314 340,298 362,288 Z"
+        fill="#F3E9D4" stroke="#2B3236" stroke-width="10" stroke-linejoin="round"/>
 
-  <!-- Papua / near islands -->
-  <path d="M362,288
-           C394,274 428,290 436,318
-           C444,346 422,370 392,374
-           C362,378 342,358 338,336
-           C334,314 340,298 362,288 Z"
-        fill="#1F2812" stroke="#2B3236" stroke-width="10" stroke-linejoin="round"/>
+  <!-- Australia highlight -->
+  <path d="M282,356 C324,330 380,330 422,360 C456,384 462,432 428,458
+           C398,482 340,488 298,466 C262,448 248,400 282,356 Z"
+        fill="#B37210" stroke="#2B3236" stroke-width="10" stroke-linejoin="round"/>
 
-  <!-- Australia (highlighted) -->
-  <path d="M282,356
-           C324,330 380,330 422,360
-           C456,384 462,432 428,458
-           C398,482 340,488 298,466
-           C262,448 248,400 282,356 Z"
-        fill="#B37517" stroke="#2B3236" stroke-width="10" stroke-linejoin="round"/>
-
-  <!-- Outer ring -->
   <circle cx="256" cy="256" r="240" fill="none" stroke="#2B3236" stroke-width="10"/>
 </svg>

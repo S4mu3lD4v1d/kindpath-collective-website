@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Manrope } from 'next/font/google'
 import './globals.css'
+import Link from 'next/link'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -28,21 +29,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${manrope.variable} bg-sand text-slate`}>
+      <body className={`${inter.variable} ${manrope.variable} bg-[color:var(--kp-mist)] text-[color:var(--kp-ink)]`}>
         <header className="border-b border-neutral-200 bg-white/70 backdrop-blur">
           <div className="mx-auto flex max-w-6xl items-center gap-3 px-6 py-4">
-            <img
-              src="/brand/kindpath-collective-mark.svg"
-              width="32"
-              height="32"
-              alt="KindPath Collective mark"
-            />
-            <div className="text-sm sm:text-base">
-              <span className="font-semibold text-neutral-800">KindPath Foundation</span>
-              <span className="mx-2 text-[#B09958]">|</span>
-              <span className="font-semibold text-[#436F87]">KindPath Collective</span>
-              <span className="mx-2 text-[#B09958]">|</span>
-              <span className="font-semibold text-[#1F2812]">KindEarth</span>
+            <img src="/brand/collective-mark.svg" alt="KindPath Collective" className="h-10 w-10" />
+            <div className="text-xs tracking-wide text-[color:#232912]/80">
+              <Link href="/" className="hover:underline decoration-[#B37210] underline-offset-4">
+                KindPath Foundation
+              </Link>
+              <span className="px-2 opacity-50">|</span>
+              <Link href="/" className="hover:underline decoration-[#B37210] underline-offset-4">
+                KindPath Collective
+              </Link>
+              <span className="px-2 opacity-50">|</span>
+              <Link href="/platform" className="hover:underline decoration-[#B37210] underline-offset-4">
+                KindEarth
+              </Link>
             </div>
           </div>
         </header>
