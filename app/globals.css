@@ -5,22 +5,26 @@
   --kp-amber-rgb: 179 117 23;
   --kp-ochre:#B09958;
   --kp-ochre-rgb: 176 153 88;
-  --kp-slate:#2B3236;
-  --kp-slate-rgb: 43 50 54;
+  --kp-moss:#363F18;
   --kp-river:#436F87;
   --kp-river-rgb: 67 111 135;
+  --kp-slate:#2B3236;
+  --kp-slate-rgb: 43 50 54;
+  --kp-mist:#f6f3ec;
+  --kp-mist-rgb: 246 243 236;
+  --kp-ink:#111714;
+  --kp-ink-rgb: 17 23 20;
   --kp-sand:#F7FBF9;
   --kp-sand-rgb: 247 251 249;
   --kp-veil:#e3f2ef;
-  --kp-mist:#e4f1ef;
   --kp-fog:#e8f4f1;
   --kp-cloud:#dfeae7;
   --kp-foam:#eef5f3;
   --kp-slate-700:#3A4247;
   --kp-slate-600:#4C565C;
   --kp-slate-500:#5F6A71;
-  color: var(--kp-slate);
-  background: var(--kp-sand);
+  color: var(--kp-ink);
+  background: var(--kp-mist);
 }
 
 @tailwind base;
@@ -28,8 +32,8 @@
 @tailwind utilities;
 
 body {
-  background: var(--kp-sand);
-  color: var(--kp-slate);
+  background: var(--kp-mist);
+  color: var(--kp-ink);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
 
@@ -42,7 +46,10 @@ h4 {
 }
 
 a {
-  color: var(--kp-river);
+  color: var(--kp-moss);
+}
+a:hover {
+  color: var(--kp-amber);
 }
 
 .card {
@@ -60,24 +67,4 @@ a {
 
 .text-slate-700 {
   color: var(--kp-slate-700);
-}
-
-:root{
-  --kp-deep:#232912;
-  --kp-moss:#363F18;
-  --kp-amber:#B37210;
-  --kp-ink:#2B3236;
-  --kp-mist:#F3E9D4;
-}
-
-html, body{
-  background: var(--kp-mist);
-  color: var(--kp-ink);
-}
-
-a{
-  color: var(--kp-moss);
-}
-a:hover{
-  color: var(--kp-amber);
 }
