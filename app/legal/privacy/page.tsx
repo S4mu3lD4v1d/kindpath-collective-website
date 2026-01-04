@@ -10,7 +10,7 @@ export default function Page() {
         operational and record-keeping purposes.
       </p>
       <p className="mt-4 text-neutral-700">
-        If you'd like your information removed, contact us via the details provided on the site.
+        If you would like your information removed, contact us via the details provided on the site.
       </p>
     </main>
   );
