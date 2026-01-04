@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="KindEarth mark">
+  <style>
+    :root{
+      --kp-forest:#1F2812;
+      --kp-amber:#B37517;
+      --kp-ochre:#B09958;
+      --kp-slate:#2B3236;
+      --kp-river:#436F87;
+      --ocean-outer:#7FC7DA;
+      --ocean-inner:#BFEAF2;
+    }
+    .ring{ fill:none; stroke:var(--kp-slate); stroke-width:10; }
+    .oceanOuter{ fill:var(--ocean-outer); }
+    .oceanInner{ fill:var(--ocean-inner); }
+    .land{ fill:var(--kp-forest); stroke:var(--kp-slate); stroke-width:6; stroke-linejoin:round; }
+    .aus{ fill:var(--kp-amber); stroke:var(--kp-slate); stroke-width:6; stroke-linejoin:round; }
+    .isle{ fill:var(--kp-forest); stroke:var(--kp-slate); stroke-width:5; stroke-linejoin:round; }
+  </style>
+
+  <!-- Ocean (flat two-tone) -->
+  <circle class="oceanOuter" cx="256" cy="256" r="240"/>
+  <circle class="oceanInner" cx="256" cy="256" r="190"/>
+
+  <!-- Landmasses (stylised Asia–Pacific) -->
+  <!-- Asia (top-left blob) -->
+  <path class="land" d="M88,138
+    C120,96 175,72 226,72
+    C267,72 302,86 316,110
+    C329,134 317,166 292,182
+    C272,195 258,205 250,220
+    C236,246 206,264 174,254
+    C146,245 132,234 116,214
+    C92,185 70,167 88,138 Z"/>
+
+  <!-- Japan / North islands -->
+  <path class="isle" d="M336,118
+    C350,110 364,114 372,126
+    C380,138 374,154 360,160
+    C346,166 334,154 330,142
+    C326,130 324,124 336,118 Z"/>
+
+  <!-- SE Asia peninsula -->
+  <path class="land" d="M162,240
+    C182,228 206,232 216,250
+    C226,268 216,292 196,306
+    C176,320 154,308 148,292
+    C142,276 142,252 162,240 Z"/>
+
+  <!-- Indonesia-ish chain -->
+  <path class="isle" d="M232,292 C252,284 272,288 280,300 C288,312 276,326 256,330 C236,334 224,304 232,292 Z"/>
+  <path class="isle" d="M290,308 C304,302 320,306 326,316 C332,326 322,338 306,340 C290,342 282,316 290,308 Z"/>
+  <path class="isle" d="M340,330 C352,326 366,330 372,340 C378,350 370,362 356,364 C342,366 334,342 340,330 Z"/>
+
+  <!-- Papua / near islands -->
+  <path class="land" d="M360,286
+    C388,276 416,288 424,312
+    C432,336 414,356 388,360
+    C362,364 344,350 340,330
+    C336,310 340,294 360,286 Z"/>
+
+  <!-- Australia (highlighted) -->
+  <path class="aus" d="M280,356
+    C318,332 370,330 410,356
+    C446,380 452,426 420,452
+    C392,476 338,482 300,462
+    C266,444 250,398 280,356 Z"/>
+
+  <!-- Outer ring -->
+  <circle class="ring" cx="256" cy="256" r="240"/>
+</svg>
