@@ -19,6 +19,7 @@ export default function Footer() {
           </nav>
         </div>
       </div>
-    </footer>
+      <div className="mt-2 text-xs opacity-60" data-build-stamp="true">Build: 2026-01-04 02:53 UTC</div>
+</footer>
   );
 }
