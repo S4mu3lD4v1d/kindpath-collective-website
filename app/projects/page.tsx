@@ -12,7 +12,7 @@ export default function Projects() {
         <header className="text-center space-y-3">
           <p className="text-xs font-semibold text-amber uppercase tracking-wide">Projects</p>
           <h1 className="text-4xl font-semibold text-primary">Proof of Build</h1>
-          <p className="text-lg text-slate-600">
+          <p className="text-lg text-[color:var(--kp-slate-600)]">
             These projects document the living build: platform development, pilot scaffolds, and open collaboration artefacts.
             We share progress carefully and favour integrity over hype.
           </p>
@@ -53,7 +53,7 @@ export default function Projects() {
           ].map((project) => (
             <div key={project.title} className="card p-6 space-y-3">
               <h2 className="text-xl font-semibold text-primary">{project.title}</h2>
-              <p className="text-sm text-slate-600">{project.body}</p>
+              <p className="text-sm text-[color:var(--kp-slate-600)]">{project.body}</p>
               <p className="text-xs font-semibold uppercase tracking-wide text-amber">Status: {project.status}</p>
               <a
                 href={project.cta.href}

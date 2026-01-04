@@ -12,7 +12,7 @@ export default function Governance() {
         <header className="text-center space-y-3">
           <p className="text-xs font-semibold text-amber uppercase tracking-wide">Governance</p>
           <h1 className="text-4xl font-semibold text-primary">Governance & Safeguards</h1>
-          <p className="text-lg text-slate-600">
+          <p className="text-lg text-[color:var(--kp-slate-600)]">
             KindPath is sovereignty-first by design. Consent, refusal, data ownership, and interpretability are structural requirements.
           </p>
         </header>
@@ -28,9 +28,9 @@ export default function Governance() {
               { title: 'No Scoring Humans', body: 'Metrics are field indicators, not moral judgements.' },
               { title: 'Auditable Exports', body: 'Exports are auditable and portable.' },
             ].map((item) => (
-              <div key={item.title} className="card p-5 shadow-none border-[#e8f4f1]">
+              <div key={item.title} className="card p-5 shadow-none border-[color:var(--kp-fog)]">
                 <h3 className="font-semibold text-primary mb-1">{item.title}</h3>
-                <p className="text-sm text-slate-700">{item.body}</p>
+                <p className="text-sm text-[color:var(--kp-slate-700)]">{item.body}</p>
               </div>
             ))}
           </div>
@@ -40,7 +40,7 @@ export default function Governance() {
           <h2 className="text-2xl font-semibold text-primary">Governance Documentation</h2>
           <div className="grid gap-3 md:grid-cols-3">
             {['Data Sovereignty Policy', 'Consent & Refusal Framework', 'Ethics Boundaries'].map((doc) => (
-              <div key={doc} className="card p-4 text-center text-sm font-semibold text-primary shadow-none border-[#e8f4f1]">
+              <div key={doc} className="card p-4 text-center text-sm font-semibold text-primary shadow-none border-[color:var(--kp-fog)]">
                 {doc}
               </div>
             ))}
