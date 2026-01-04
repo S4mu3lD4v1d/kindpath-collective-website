@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="KindPath Collective mark">
+  <style>
+    :root{
+      --kp-forest:#1F2812;
+      --kp-amber:#B37517;
+      --kp-ochre:#B09958;
+      --kp-slate:#2B3236;
+      --kp-river:#436F87;
+    }
+    .ring{ fill:none; stroke:var(--kp-slate); stroke-width:10; }
+    .outline{ fill:none; stroke:var(--kp-slate); stroke-width:6; stroke-linecap:round; stroke-linejoin:round; opacity:.9; }
+    .waveA{ fill:none; stroke:var(--kp-amber); stroke-width:10; stroke-linecap:round; stroke-linejoin:round; }
+    .waveB{ fill:none; stroke:var(--kp-river); stroke-width:10; stroke-linecap:round; stroke-linejoin:round; }
+    .waveC{ fill:none; stroke:var(--kp-forest); stroke-width:10; stroke-linecap:round; stroke-linejoin:round; }
+  </style>
+
+  <!-- Outer ring -->
+  <circle class="ring" cx="256" cy="256" r="240"/>
+
+  <!-- Waveform (three stacked traces to match palette) -->
+  <!-- Base path coordinates are tuned to look clean at small sizes -->
+  <path class="waveA" d="M84 246
+    C120 246 136 246 152 246
+    C170 246 176 220 192 220
+    C208 220 212 292 228 292
+    C244 292 250 180 268 180
+    C286 180 290 312 308 312
+    C326 312 332 246 352 246
+    C372 246 392 246 428 246" />
+
+  <path class="waveB" d="M84 256
+    C120 256 136 256 152 256
+    C170 256 176 232 192 232
+    C208 232 212 288 228 288
+    C244 288 250 196 268 196
+    C286 196 290 304 308 304
+    C326 304 332 256 352 256
+    C372 256 392 256 428 256" />
+
+  <path class="waveC" d="M84 266
+    C120 266 136 266 152 266
+    C170 266 176 244 192 244
+    C208 244 212 284 228 284
+    C244 284 250 212 268 212
+    C286 212 290 296 308 296
+    C326 296 332 266 352 266
+    C372 266 392 266 428 266" />
+
+  <!-- Slight charcoal outline to keep it crisp on white -->
+  <path class="outline" d="M84 256
+    C120 256 136 256 152 256
+    C170 256 176 232 192 232
+    C208 232 212 288 228 288
+    C244 288 250 196 268 196
+    C286 196 290 304 308 304
+    C326 304 332 256 352 256
+    C372 256 392 256 428 256" />
+</svg>
