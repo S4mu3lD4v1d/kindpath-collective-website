@@ -32,17 +32,17 @@ export default function RootLayout({
       <body className={`${inter.variable} ${manrope.variable} bg-[color:var(--kp-mist)] text-[color:var(--kp-ink)]`}>
         <header className="border-b border-neutral-200 bg-white/70 backdrop-blur">
           <div className="mx-auto flex max-w-6xl items-center gap-3 px-6 py-4">
-            <img src="/brand/collective-mark.svg" alt="KindPath Collective" className="h-10 w-10" />
-            <div className="text-xs tracking-wide text-[color:#232912]/80">
-              <Link href="/" className="hover:underline decoration-[#B37210] underline-offset-4">
+            <Link href="/" aria-label="Home" className="shrink-0"><img src="/brand/collective-mark.svg" alt="KindPath Collective" className="h-10 w-10" /></Link>
+            <div className="text-xs tracking-wide text-[color:var(--kp-forest)] opacity-80">
+              <Link href="/" className="hover:underline decoration-[color:var(--kp-amber)] underline-offset-4">
                 KindPath Foundation
               </Link>
               <span className="px-2 opacity-50">|</span>
-              <Link href="/" className="hover:underline decoration-[#B37210] underline-offset-4">
+              <Link href="/" className="hover:underline decoration-[color:var(--kp-amber)] underline-offset-4">
                 KindPath Collective
               </Link>
               <span className="px-2 opacity-50">|</span>
-              <Link href="/platform" className="hover:underline decoration-[#B37210] underline-offset-4">
+              <Link href="/platform" className="hover:underline decoration-[color:var(--kp-amber)] underline-offset-4">
                 KindEarth
               </Link>
             </div>
