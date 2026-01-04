@@ -1,34 +1,26 @@
-import Link from 'next/link'
+import Link from "next/link";
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
-    <footer className="mt-16 border-t border-[#e4f1ef] bg-white">
-      <div className="max-w-6xl mx-auto grid gap-8 px-4 py-12 md:grid-cols-3">
-        <div>
-          <h3 className="text-sm font-semibold text-primary">Platform</h3>
-          <ul className="mt-3 space-y-2 text-sm text-slate-600">
-            <li><Link href="/platform" className="hover:text-primary">Overview</Link></li>
-            <li><Link href="/projects" className="hover:text-primary">Projects</Link></li>
-            <li><Link href="/governance" className="hover:text-primary">Governance</Link></li>
-            <li><a href="https://github.com/kindpath" className="hover:text-primary">GitHub</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-sm font-semibold text-primary">Legal</h3>
-          <ul className="mt-3 space-y-2 text-sm text-slate-600">
-            <li><Link href="/privacy" className="hover:text-primary">Privacy Policy</Link></li>
-            <li><Link href="/disclaimer" className="hover:text-primary">Disclaimer</Link></li>
-            <li><Link href="/terms" className="hover:text-primary">Terms of Service</Link></li>
-            <li><Link href="/acknowledgement" className="hover:text-primary">Acknowledgement</Link></li>
-          </ul>
-        </div>
-        <div className="text-sm text-slate-600">
-          <p className="font-semibold text-primary">KindPath Collective</p>
-          <p>Building KindEarth — sovereignty-first tools for ethical pilots.</p>
-          <p className="mt-2">sam@kindpathcollective.org</p>
-          <p className="mt-4 text-xs text-slate-500">© 2026 KindPath Collective. All rights reserved.</p>
+    <footer className="border-t mt-16">
+      <div className="mx-auto max-w-6xl px-6 py-10 text-sm">
+        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <p className="text-[color:var(--kp-slate-700)]">
+            © {year} <span className="font-medium">KindPath Foundation</span>. Built by{" "}
+            <span className="font-medium">KindPath Collective</span>. Powered by{" "}
+            <span className="font-medium">KindEarth</span>.
+          </p>
+
+          <nav className="flex flex-wrap gap-x-5 gap-y-2 text-[color:var(--kp-slate-700)]">
+            <Link className="hover:underline" href="/privacy">Privacy</Link>
+            <Link className="hover:underline" href="/terms">Terms</Link>
+            <Link className="hover:underline" href="/disclaimer">Disclaimer</Link>
+            <Link className="hover:underline" href="/acknowledgement">Acknowledgement</Link>
+          </nav>
         </div>
       </div>
     </footer>
-  )
+  );
 }

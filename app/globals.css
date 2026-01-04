@@ -1,15 +1,35 @@
+:root {
+  --kp-forest:#1F2812;
+  --kp-forest-rgb: 31 40 18;
+  --kp-amber:#B37517;
+  --kp-amber-rgb: 179 117 23;
+  --kp-ochre:#B09958;
+  --kp-ochre-rgb: 176 153 88;
+  --kp-slate:#2B3236;
+  --kp-slate-rgb: 43 50 54;
+  --kp-river:#436F87;
+  --kp-river-rgb: 67 111 135;
+  --kp-sand:#F7FBF9;
+  --kp-sand-rgb: 247 251 249;
+  --kp-veil:#e3f2ef;
+  --kp-mist:#e4f1ef;
+  --kp-fog:#e8f4f1;
+  --kp-cloud:#dfeae7;
+  --kp-foam:#eef5f3;
+  --kp-slate-700:#3A4247;
+  --kp-slate-600:#4C565C;
+  --kp-slate-500:#5F6A71;
+  color: var(--kp-slate);
+  background: var(--kp-sand);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color: #1f2937;
-  background: #f7fbf9;
-}
-
 body {
-  background: #f7fbf9;
-  color: #1f2937;
+  background: var(--kp-sand);
+  color: var(--kp-slate);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
 
@@ -18,13 +38,26 @@ h2,
 h3,
 h4 {
   font-family: var(--font-manrope), var(--font-inter), system-ui, sans-serif;
-  color: #0f766e;
+  color: var(--kp-forest);
 }
 
 a {
-  color: #0f766e;
+  color: var(--kp-river);
 }
 
 .card {
-  @apply rounded-2xl border border-[#e3f2ef] bg-white shadow-soft;
+  @apply rounded-2xl border bg-white shadow-soft;
+  border-color: var(--kp-veil);
+}
+
+.text-slate-500 {
+  color: var(--kp-slate-500);
+}
+
+.text-slate-600 {
+  color: var(--kp-slate-600);
+}
+
+.text-slate-700 {
+  color: var(--kp-slate-700);
 }

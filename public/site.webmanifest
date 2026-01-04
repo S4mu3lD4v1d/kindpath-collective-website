@@ -1,11 +1,11 @@
 {
-  "name": "KindPath Collective",
+  "name": "KindPath Foundation \u2014 KindPath Collective",
   "short_name": "KindPath",
   "description": "A digital platform for ethical social-policy forecasting and community-led pilots.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f7fbf9",
-  "theme_color": "#f7fbf9",
+  "background_color": "#FFFFFF",
+  "theme_color": "#1F2812",
   "icons": [
     {
       "src": "/logo-mark-192.png",
