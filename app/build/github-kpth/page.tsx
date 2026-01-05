@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import GlassPanel from '../../components/GlassPanel'
+import PageShell from '../../components/PageShell'
 
 export const metadata: Metadata = {
   title: 'GitHub Repo KPTH | KindPath Collective',
@@ -8,55 +10,48 @@ export const metadata: Metadata = {
 
 export default function GitHubKPTH() {
   return (
-    <main>
-      <div className="mx-auto max-w-4xl px-4 py-14 space-y-8">
-        <header className="space-y-3">
-          <p className="text-xs font-semibold text-amber uppercase tracking-wide">Build</p>
-          <h1 className="text-4xl font-semibold text-[color:var(--kp-ink)]">GitHub Repo KPTH</h1>
-          <p className="text-base text-[color:var(--kp-ink-soft)]">
-            KPTH is the primary repository for KindEarth and the broader KindPath Collective stack.
-          </p>
-        </header>
+    <PageShell
+      title="GitHub Repo KPTH"
+      eyebrow="Build"
+      description="KPTH is the primary repository for KindEarth and the broader KindPath Collective stack."
+    >
+      <GlassPanel className="p-6 sm:p-8 space-y-3">
+        <h2 className="text-2xl font-semibold text-[color:var(--kp-ink)]">What this is</h2>
+        <p className="text-sm text-[color:var(--kp-ink-soft)]">
+          The repository holds architecture notes, service scaffolding, and prototype implementations. It is the most
+          transparent window into how we build, test, and document the platform.
+        </p>
+        <p className="text-sm text-[color:var(--kp-ink-soft)]">
+          We keep the repo organized by domain so partners can trace where tools and safeguards live.
+        </p>
+      </GlassPanel>
 
-        <section className="space-y-3 text-[color:var(--kp-ink-soft)]">
-          <p>
-            The repository holds architecture notes, service scaffolding, and prototype implementations. It is the most
-            transparent window into how we build, test, and document the platform.
-          </p>
-          <p>
-            We keep the repo organized by domain so community partners can trace where tools and governance safeguards live.
-          </p>
-        </section>
+      <GlassPanel className="p-6 sm:p-8 space-y-3">
+        <h2 className="text-2xl font-semibold text-[color:var(--kp-ink)]">How we use it in pilots</h2>
+        <ul className="list-disc list-inside space-y-2 text-sm text-[color:var(--kp-ink-soft)]">
+          <li>Review core services, interfaces, and pilot toolkits.</li>
+          <li>Trace governance requirements in code and documentation.</li>
+          <li>Follow architecture decisions and build notes.</li>
+        </ul>
+      </GlassPanel>
 
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold text-[color:var(--kp-ink)]">How it&apos;s used in KindEarth</h2>
-          <ul className="list-disc list-inside space-y-2 text-sm text-[color:var(--kp-ink-soft)]">
-            <li>Review core services, interfaces, and pilot toolkits.</li>
-            <li>Trace governance requirements in code and documentation.</li>
-            <li>Follow build notes and architecture decisions.</li>
-          </ul>
-        </section>
-
-        <p className="text-sm font-semibold text-[color:var(--kp-ink)]">Status: Active prototyping</p>
-
-        <a
-          href="https://github.com/kindpath"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center btn-secondary"
-        >
-          Visit the KPTH GitHub Repository
-        </a>
-
-        <div className="flex flex-col gap-2">
-          <Link href="/build" className="text-sm font-semibold text-[color:var(--kp-ink)] hover:text-[color:var(--kp-amber)]">
-            Back to Proof of Build
-          </Link>
-          <Link href="/" className="text-sm font-semibold text-[color:var(--kp-ink)] hover:text-[color:var(--kp-amber)]">
-            Back to Home
-          </Link>
+      <GlassPanel className="p-6 sm:p-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <h3 className="text-lg font-semibold text-[color:var(--kp-ink)]">Explore the open build</h3>
+          <p className="text-sm text-[color:var(--kp-ink-soft)]">Jump to the repo or join a pilot conversation.</p>
         </div>
-      </div>
-    </main>
+        <div className="flex flex-wrap gap-3">
+          <a
+            href="https://github.com/kindpath"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-secondary"
+          >
+            Visit the KPTH GitHub Repository
+          </a>
+          <Link href="/join-pilot" className="btn-primary">Join the Pilot</Link>
+        </div>
+      </GlassPanel>
+    </PageShell>
   )
 }

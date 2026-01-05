@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import GlassPanel from '../../components/GlassPanel'
+import PageShell from '../../components/PageShell'
 
 export const metadata: Metadata = {
   title: 'Pilot Operations Tools | KindEarth',
@@ -8,41 +10,42 @@ export const metadata: Metadata = {
 
 export default function PilotOperations() {
   return (
-    <main>
-      <div className="mx-auto max-w-4xl px-4 py-14 space-y-8">
-        <header className="space-y-3">
-          <p className="text-xs font-semibold text-amber uppercase tracking-wide">Tools</p>
-          <h1 className="text-4xl font-semibold text-[color:var(--kp-ink)]">Pilot Operations Tools</h1>
-          <p className="text-base text-[color:var(--kp-ink-soft)]">
-            Pilot Operations Tools support scoping, tracking, tapering, and reporting for reversible pilots.
-          </p>
-        </header>
+    <PageShell
+      title="Pilot Operations Tools"
+      eyebrow="Tools"
+      description="Pilot Operations Tools support scoping, tracking, tapering, and reporting for reversible pilots."
+    >
+      <GlassPanel className="p-6 sm:p-8 space-y-3">
+        <h2 className="text-2xl font-semibold text-[color:var(--kp-ink)]">What this is</h2>
+        <p className="text-sm text-[color:var(--kp-ink-soft)]">
+          This toolkit keeps pilot boundaries, milestones, and taper points visible to everyone involved. It prioritizes
+          clarity and shared accountability rather than surveillance.
+        </p>
+        <p className="text-sm text-[color:var(--kp-ink-soft)]">
+          The tools are designed to make pilots reversible, measurable, and easy to interpret by the communities they
+          serve.
+        </p>
+      </GlassPanel>
 
-        <section className="space-y-3 text-[color:var(--kp-ink-soft)]">
-          <p>
-            This toolkit helps teams define boundaries, track progress, and document learning without turning pilots into
-            surveillance. It keeps timeframes, milestones, and exit criteria visible and consent-aware.
-          </p>
-          <p>
-            The focus is on clarity and coordination so pilots stay aligned with community intent.
-          </p>
-        </section>
+      <GlassPanel className="p-6 sm:p-8 space-y-3">
+        <h2 className="text-2xl font-semibold text-[color:var(--kp-ink)]">How we use it in pilots</h2>
+        <ul className="list-disc list-inside space-y-2 text-sm text-[color:var(--kp-ink-soft)]">
+          <li>Define scope, checkpoints, and clear exit criteria.</li>
+          <li>Track updates and governance decisions transparently.</li>
+          <li>Generate reporting exports that stay auditable.</li>
+        </ul>
+      </GlassPanel>
 
-        <section className="space-y-3">
-          <h2 className="text-2xl font-semibold text-[color:var(--kp-ink)]">How it&apos;s used in KindEarth</h2>
-          <ul className="list-disc list-inside space-y-2 text-sm text-[color:var(--kp-ink-soft)]">
-            <li>Define pilot scope, milestones, and taper points.</li>
-            <li>Record progress updates and governance decisions.</li>
-            <li>Generate transparent reporting exports.</li>
-          </ul>
-        </section>
-
-        <p className="text-sm font-semibold text-[color:var(--kp-ink)]">Status: Active prototyping</p>
-
-        <Link href="/" className="text-sm font-semibold text-[color:var(--kp-ink)] hover:text-[color:var(--kp-amber)]">
-          Back to Home
-        </Link>
-      </div>
-    </main>
+      <GlassPanel className="p-6 sm:p-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <h3 className="text-lg font-semibold text-[color:var(--kp-ink)]">Start a pilot with clear guardrails</h3>
+          <p className="text-sm text-[color:var(--kp-ink-soft)]">Join the pilot list and see how operations tooling fits.</p>
+        </div>
+        <div className="flex flex-wrap gap-3">
+          <Link href="/join-pilot" className="btn-primary">Join the Pilot</Link>
+          <Link href="/tools/kindearth-platform" className="btn-secondary">KindEarth Platform</Link>
+        </div>
+      </GlassPanel>
+    </PageShell>
   )
 }

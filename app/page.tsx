@@ -45,9 +45,8 @@ export default function Home() {
         <span className="inline-flex items-center rounded-full bg-amber/10 px-3 py-1 text-xs font-semibold text-amber">
           Pilot Program Open
         </span>
-        <h1 className="mt-6 text-4xl leading-tight font-semibold text-[color:var(--kp-ink)] md:text-5xl md:leading-snug">
-          <span className="block">KindPath Collective is building KindEarth —</span>
-          <span className="block">a digital platform for ethical social-policy forecasting and community-led pilots.</span>
+        <h1 className="mt-6 text-4xl leading-tight font-semibold text-[color:var(--kp-ink)] md:text-5xl md:leading-snug [text-wrap:balance]">
+          KindPath Collective is building KindEarth — a digital platform for ethical social-policy forecasting and community-led pilots.
         </h1>
         <p className="mt-5 text-lg text-[color:var(--kp-ink-soft)] md:text-xl">
           KindEarth helps communities and institutions see upstream pressure early, restore coherence, and run pilots that are measurable, reversible, and sovereignty-first.
@@ -74,7 +73,7 @@ export default function Home() {
             <div className="flex items-center justify-center gap-6">
               <div className="hidden sm:flex flex-col items-center gap-2">
                 <img
-                  src="/brand/collective-mark.svg"
+                  src="/brand/kp-collective-mark.svg"
                   alt="KindPath Collective mark"
                   className="h-14 w-14 opacity-90"
                 />
@@ -90,7 +89,7 @@ export default function Home() {
               </div>
               <div className="hidden sm:flex flex-col items-center gap-2">
                 <img
-                  src="/brand/kindearth-mark.svg"
+                  src="/brand/kindearth-mark.png"
                   alt="KindEarth mark"
                   className="h-14 w-14 opacity-90"
                 />

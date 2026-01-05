@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="KindEarth mark">
+  <defs>
+    <style>
+            .ring{ fill:none; stroke:#2B3236; stroke-width:12; }
+      .o1{ fill:#3B6E82; }
+      .o2{ fill:#BFEAF2; opacity:.85; }
+      .grid{ fill:none; stroke:rgba(35,41,18,.25); stroke-width:6; }
+      .land{ fill:#2E3C1C; stroke:rgba(35,41,18,.35); stroke-width:6; stroke-linejoin:round; }
+      .aus{ fill:#B37210; stroke:rgba(35,41,18,.35); stroke-width:6; stroke-linejoin:round; }
+    </style>
+    <clipPath id="globeClip">
+      <circle cx="256" cy="256" r="230"/>
+    </clipPath>
+  </defs>
+
+  <circle class="o1" cx="256" cy="256" r="240"/>
+  <circle class="o2" cx="256" cy="256" r="205"/>
+
+  <g clip-path="url(#globeClip)">
+    <!-- latitude lines -->
+    <path class="grid" d="M26 256h460"/>
+    <path class="grid" d="M54 176c70 52 149 78 202 78s132-26 202-78"/>
+    <path class="grid" d="M54 336c70-52 149-78 202-78s132 26 202 78"/>
+    <!-- longitude lines -->
+    <path class="grid" d="M256 26v460"/>
+    <path class="grid" d="M176 54c52 70 78 149 78 202s-26 132-78 202"/>
+    <path class="grid" d="M336 54c-52 70-78 149-78 202s26 132 78 202"/>
+
+    <!-- Land (stylised Indo-Pacific) -->
+    <path class="land" d="M92 190c38-58 108-90 176-88 44 2 92 18 114 46 22 28 18 66-8 88-18 16-44 22-60 42-18 24-52 48-96 44-50-6-82-38-102-62-18-22-34-40-24-70z"/>
+    <path class="land" d="M340 250c34-18 86-10 108 20 22 32 8 78-30 96-40 18-92 8-110-22-18-30-4-76 32-94z"/>
+    <!-- Australia (highlight) -->
+    <path class="aus" d="M250 342c26-30 70-46 110-36 46 12 76 56 66 98-8 38-44 68-88 74-48 6-94-14-114-50-18-30-10-64 26-86z"/>
+  </g>
+
+  <circle class="ring" cx="256" cy="256" r="240"/>
+</svg>

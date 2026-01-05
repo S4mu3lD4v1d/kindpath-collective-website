@@ -15,7 +15,7 @@ export default function Navbar() {
         {/* Brand (top-left logo + name) */}
         <Link href="/" className="flex items-center gap-3">
           <img
-            src="/brand/collective-mark.svg"
+            src="/brand/kp-collective-mark.svg"
             alt="KindPath Collective"
             className="h-9 w-9"
           />

@@ -13,7 +13,7 @@ export default function Platform() {
           <p className="text-xs font-semibold text-amber uppercase tracking-wide">Platform</p>
           <div className="flex items-center justify-center gap-4">
             <img
-              src="/brand/kindearth-mark.svg"
+              src="/brand/kindearth-mark.png"
               alt="KindEarth mark"
               className="h-12 w-12 opacity-90"
             />
