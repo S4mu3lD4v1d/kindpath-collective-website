@@ -17,7 +17,7 @@ export default function KindEarth() {
     >
       <GlassPanel className="p-6 sm:p-8 space-y-3">
         <div className="flex items-center gap-3">
-          <img src="/brand/kindearth-mark.png" alt="KindEarth mark" className="h-10 w-10" />
+          <img src="/brand/kindearth-mark.svg" alt="KindEarth mark" className="h-10 w-10" />
           <h2 className="text-2xl font-semibold text-[color:var(--kp-ink)]">What this is</h2>
         </div>
         <p className="text-sm text-[color:var(--kp-ink-soft)]">

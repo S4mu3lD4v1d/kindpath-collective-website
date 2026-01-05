@@ -30,7 +30,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-3 text-[color:var(--kp-ink-muted)]">
             <img
-              src="/brand/kindearth-mark.png"
+              src="/brand/kindearth-mark.svg"
               alt="KindEarth mark"
               className="h-10 w-10 opacity-90"
             />

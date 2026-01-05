@@ -89,7 +89,7 @@ export default function Home() {
               </div>
               <div className="hidden sm:flex flex-col items-center gap-2">
                 <img
-                  src="/brand/kindearth-mark.png"
+                  src="/brand/kindearth-mark.svg"
                   alt="KindEarth mark"
                   className="h-14 w-14 opacity-90"
                 />
