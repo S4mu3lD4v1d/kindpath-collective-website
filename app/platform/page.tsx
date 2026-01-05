@@ -79,13 +79,13 @@ export default function Platform() {
             System architecture diagram (placeholder)
           </div>
           <div className="flex flex-wrap gap-3">
-            <a href="https://github.com/kindpath" className="rounded-full border border-forest/30 px-4 py-2 text-sm font-semibold text-forest hover:border-forest">
+            <a href="https://github.com/kindpath" className="btn-secondary">
               Platform Repository (KPTH)
             </a>
-            <a href="/roadmap" className="rounded-full border border-forest/30 px-4 py-2 text-sm font-semibold text-forest hover:border-forest">
+            <a href="/build/architecture-roadmap" className="btn-secondary">
               Technical Roadmap
             </a>
-            <a href="/governance" className="rounded-full border border-forest/30 px-4 py-2 text-sm font-semibold text-forest hover:border-forest">
+            <a href="/governance" className="btn-secondary">
               Governance & Safeguards
             </a>
           </div>
@@ -95,7 +95,7 @@ export default function Platform() {
           <h2 className="text-2xl font-semibold text-[color:var(--kp-ink)]">Interested in deploying KindEarth?</h2>
           <a
             href="/join-pilot"
-            className="mt-4 inline-flex items-center rounded-full bg-amber px-6 py-3 text-sm font-semibold text-white transition hover:bg-forest"
+            className="mt-4 inline-flex items-center btn-primary"
           >
             Express Interest (EOI)
           </a>

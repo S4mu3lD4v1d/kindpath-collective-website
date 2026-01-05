@@ -33,13 +33,13 @@ export default function Build() {
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link
               href="/build/github-kpth"
-              className="rounded-full border border-[color:var(--kp-ink)]/20 bg-white/60 px-5 py-3 text-sm font-semibold text-[color:var(--kp-ink)] transition hover:border-[color:var(--kp-ink)]/40 hover:bg-white/80"
+              className="btn-secondary"
             >
               GitHub Repo KPTH
             </Link>
             <Link
               href="/build/architecture-roadmap"
-              className="rounded-full border border-[color:var(--kp-ink)]/20 bg-white/60 px-5 py-3 text-sm font-semibold text-[color:var(--kp-ink)] transition hover:border-[color:var(--kp-ink)]/40 hover:bg-white/80"
+              className="btn-secondary"
             >
               Architecture + Roadmap
             </Link>

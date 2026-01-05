@@ -48,7 +48,7 @@ export default function JoinPilot() {
             </div>
             <button
               type="submit"
-              className="w-full rounded-full bg-amber px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:bg-forest"
+              className="w-full btn-primary"
             >
               Submit Expression of Interest
             </button>

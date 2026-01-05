@@ -12,10 +12,10 @@ export default function PillButton({ href, children, className }: PillButtonProp
     <Link
       href={href}
       className={[
-        'flex items-center justify-center rounded-full border border-[color:var(--kp-ink)]/15',
-        'bg-white/60 px-4 py-3 text-center text-xs font-semibold text-[color:var(--kp-ink)]',
-        'transition hover:border-[color:var(--kp-ink)]/35 hover:bg-white/80',
-        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber',
+        'flex items-center justify-center rounded-full border border-black/10',
+        'bg-white/55 px-4 py-3 text-center text-xs font-semibold text-[color:var(--kp-ink-soft)]',
+        'transition hover:border-black/20 hover:bg-white/75',
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest/40',
         'focus-visible:ring-offset-2 focus-visible:ring-offset-[color:var(--kp-mist)]',
         className,
       ]

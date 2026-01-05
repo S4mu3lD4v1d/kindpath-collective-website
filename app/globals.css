@@ -62,6 +62,36 @@ a:hover {
   box-shadow: 0 10px 24px rgb(var(--kp-forest-rgb) / 0.08);
 }
 
+.btn-primary {
+  @apply rounded-full px-5 py-3 text-sm font-semibold transition focus-visible:outline-none;
+  background-color: rgb(var(--kp-forest-rgb) / 1);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: rgb(var(--kp-forest-rgb) / 0.9);
+}
+
+.btn-primary:focus-visible {
+  box-shadow: 0 0 0 2px rgb(var(--kp-forest-rgb) / 0.4), 0 0 0 4px var(--kp-mist);
+}
+
+.btn-secondary {
+  @apply rounded-full px-5 py-3 text-sm font-semibold transition focus-visible:outline-none;
+  border: 1px solid rgb(var(--kp-forest-rgb) / 0.4);
+  color: var(--kp-ink);
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  border-color: rgb(var(--kp-forest-rgb) / 0.6);
+  background-color: rgb(255 255 255 / 0.7);
+}
+
+.btn-secondary:focus-visible {
+  box-shadow: 0 0 0 2px rgb(var(--kp-forest-rgb) / 0.4), 0 0 0 4px var(--kp-mist);
+}
+
 .text-slate-500 {
   color: var(--kp-slate-500);
 }

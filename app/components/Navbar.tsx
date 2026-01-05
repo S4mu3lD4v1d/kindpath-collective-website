@@ -15,20 +15,13 @@ export default function Navbar() {
         {/* Brand (top-left logo + name) */}
         <Link href="/" className="flex items-center gap-3">
           <img
-            src="/brand/collective-mark-64.png"
+            src="/brand/collective-mark.svg"
             alt="KindPath Collective"
-            className="h-10 w-10 rounded-full"
+            className="h-9 w-9"
           />
           <div className="leading-tight">
             <div className="text-sm font-semibold text-[color:var(--kp-ink)]">
               KindPath Collective
-            </div>
-            <div className="text-[11px] tracking-wide text-[color:var(--kp-ink)]/70">
-              <span>KindPath Foundation</span>
-              <span className="px-2 opacity-40">|</span>
-              <span>KindPath Collective</span>
-              <span className="px-2 opacity-40">|</span>
-              <span>KindEarth</span>
             </div>
           </div>
         </Link>
@@ -49,7 +42,7 @@ export default function Navbar() {
         {/* CTA */}
         <Link
           href="/#pilot"
-          className="rounded-full bg-[color:var(--kp-amber)] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:opacity-95"
+          className="btn-primary"
         >
           Join the Pilot
         </Link>

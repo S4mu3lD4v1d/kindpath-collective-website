@@ -51,7 +51,8 @@ export default function RootLayout({
       <body className={`${inter.variable} ${manrope.variable} relative bg-[color:var(--kp-mist)] text-[color:var(--kp-ink-soft)]`}>
         <div
           aria-hidden="true"
-          className="pointer-events-none fixed inset-0 -z-10 bg-[url('/brand/kindearth-watermark-detailed.png')] bg-center bg-no-repeat bg-[length:90%] opacity-[0.08]"
+          className="pointer-events-none fixed inset-0 -z-10 opacity-[0.08] bg-center bg-no-repeat bg-[length:1400px_auto] md:bg-[length:1800px_auto]"
+          style={{ backgroundImage: "url('/brand/kindearth-watermark-detailed.png')" }}
         />
         <Navbar />
         <main className="min-h-screen">

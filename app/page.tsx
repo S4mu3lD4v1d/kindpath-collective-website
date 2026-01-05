@@ -46,8 +46,8 @@ export default function Home() {
           Pilot Program Open
         </span>
         <h1 className="mt-6 text-4xl leading-tight font-semibold text-[color:var(--kp-ink)] md:text-5xl md:leading-snug">
-          <span className="text-[color:var(--kp-ink)]">KindPath Collective</span> is building KindEarth — a digital platform for
-          ethical social-policy forecasting and community-led pilots.
+          <span className="block">KindPath Collective is building KindEarth —</span>
+          <span className="block">a digital platform for ethical social-policy forecasting and community-led pilots.</span>
         </h1>
         <p className="mt-5 text-lg text-[color:var(--kp-ink-soft)] md:text-xl">
           KindEarth helps communities and institutions see upstream pressure early, restore coherence, and run pilots that are measurable, reversible, and sovereignty-first.
@@ -55,13 +55,13 @@ export default function Home() {
         <div className="mt-8 flex flex-col items-center justify-center gap-3 md:flex-row">
           <a
             href="/join-pilot"
-            className="rounded-full bg-amber px-5 py-3 text-sm font-semibold text-white transition hover:bg-forest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-[color:var(--kp-mist)]"
+            className="btn-primary"
           >
             Join the Pilot
           </a>
           <a
             href="/platform"
-            className="rounded-full border border-[color:var(--kp-ink)]/20 px-5 py-3 text-sm font-semibold text-[color:var(--kp-ink)] transition hover:border-[color:var(--kp-ink)] hover:text-[color:var(--kp-ink)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-[color:var(--kp-mist)]"
+            className="btn-secondary"
           >
             View the Platform
           </a>
@@ -72,11 +72,14 @@ export default function Home() {
         <GlassPanel className="p-8 sm:p-10">
           <header className="mb-8">
             <div className="flex items-center justify-center gap-6">
-              <img
-                src="/brand/collective-mark-128.png"
-                alt="KindPath mark"
-                className="hidden sm:block h-14 w-14 rounded-full opacity-90"
-              />
+              <div className="hidden sm:flex flex-col items-center gap-2">
+                <img
+                  src="/brand/collective-mark.svg"
+                  alt="KindPath Collective mark"
+                  className="h-14 w-14 opacity-90"
+                />
+                <span className="text-xs text-[color:var(--kp-ink-muted)]">KindPath Collective</span>
+              </div>
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[color:var(--kp-ink)]">
                   What we&apos;re building
@@ -85,11 +88,14 @@ export default function Home() {
                   A suite of tools for sovereignty, clarity, and ethical forecasting.
                 </p>
               </div>
-              <img
-                src="/brand/kindearth-mark.svg"
-                alt="KindEarth mark"
-                className="hidden sm:block h-14 w-14 opacity-90"
-              />
+              <div className="hidden sm:flex flex-col items-center gap-2">
+                <img
+                  src="/brand/kindearth-mark.svg"
+                  alt="KindEarth mark"
+                  className="h-14 w-14 opacity-90"
+                />
+                <span className="text-xs text-[color:var(--kp-ink-muted)]">KindEarth</span>
+              </div>
             </div>
           </header>
           <div className="grid gap-4 md:grid-cols-2">
@@ -137,13 +143,13 @@ export default function Home() {
           <div className="flex flex-col gap-3 md:flex-row">
             <Link
               href="/build/github-kpth"
-              className="rounded-full border border-[color:var(--kp-ink)]/20 bg-white/60 px-5 py-3 text-sm font-semibold text-[color:var(--kp-ink)] transition hover:border-[color:var(--kp-ink)]/40 hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-[color:var(--kp-mist)]"
+              className="btn-secondary"
             >
               GitHub Repo KPTH
             </Link>
             <Link
               href="/build/architecture-roadmap"
-              className="rounded-full border border-[color:var(--kp-ink)]/20 bg-white/60 px-5 py-3 text-sm font-semibold text-[color:var(--kp-ink)] transition hover:border-[color:var(--kp-ink)]/40 hover:bg-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-[color:var(--kp-mist)]"
+              className="btn-secondary"
             >
               Architecture + Roadmap
             </Link>
@@ -151,9 +157,9 @@ export default function Home() {
         </GlassPanel>
       </section>
 
-      <section className="bg-[#7fd36b]">
+      <section className="bg-[#78d56a]">
         <div className="max-w-6xl mx-auto flex flex-col gap-4 px-4 py-10 md:flex-row md:items-center md:gap-8">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/40 text-xl">🛡️</div>
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/35 text-xl">🛡️</div>
           <div className="space-y-2">
             <h3 className="text-xl font-semibold text-[color:var(--kp-ink)]">Governance & Safeguards</h3>
             <p className="text-sm md:text-base text-[color:var(--kp-ink-soft)]">
@@ -163,7 +169,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-4 py-14 text-center">
+      <section id="pilot" className="max-w-6xl mx-auto px-4 py-14 text-center">
         <h3 className="text-2xl font-semibold text-[color:var(--kp-ink)]">Ready to explore ethical pilots?</h3>
         <p className="mt-3 text-base text-[color:var(--kp-ink-soft)]">
           If you&apos;re exploring pilots, evaluation, collaboration, or partnership — join the pilot interest list.
@@ -171,7 +177,7 @@ export default function Home() {
         <div className="mt-6 flex justify-center">
           <a
             href="/join-pilot"
-            className="rounded-full bg-amber px-6 py-3 text-sm font-semibold text-white transition hover:bg-forest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber focus-visible:ring-offset-2 focus-visible:ring-offset-[color:var(--kp-mist)]"
+            className="btn-primary"
           >
             Join the Pilot Interest List
           </a>

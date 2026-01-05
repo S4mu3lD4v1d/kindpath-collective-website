@@ -43,7 +43,7 @@ export default function GitHubKPTH() {
           href="https://github.com/kindpath"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center rounded-full border border-[color:var(--kp-ink)]/20 bg-white/60 px-5 py-3 text-sm font-semibold text-[color:var(--kp-ink)] transition hover:border-[color:var(--kp-ink)]/40 hover:bg-white/80"
+          className="inline-flex items-center btn-secondary"
         >
           Visit the KPTH GitHub Repository
         </a>
