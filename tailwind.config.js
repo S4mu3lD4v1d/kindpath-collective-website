@@ -29,7 +29,7 @@ module.exports = {
         display: ['var(--font-manrope)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        soft: '0 12px 40px rgb(var(--kp-forest-rgb) / 0.12)',
+        soft: '0 10px 24px rgb(var(--kp-forest-rgb) / 0.08)',
       },
     },
   },

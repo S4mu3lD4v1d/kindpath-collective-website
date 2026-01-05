@@ -10,6 +10,7 @@ const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope' })
 export const metadata: Metadata = {
   title: 'KindPath Collective - Building KindEarth',
   description: 'A digital platform for ethical social-policy forecasting and community-led pilots.',
+  metadataBase: new URL('https://kindpathcollective.org'),
   openGraph: {
     title: 'KindPath Collective - Building KindEarth',
     description: 'A digital platform for ethical social-policy forecasting and community-led pilots.',
@@ -47,7 +48,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${manrope.variable} bg-[color:var(--kp-mist)] text-[color:var(--kp-ink)]`}>
+      <body className={`${inter.variable} ${manrope.variable} relative bg-[color:var(--kp-mist)] text-[color:var(--kp-ink-soft)]`}>
+        <div
+          aria-hidden="true"
+          className="pointer-events-none fixed inset-0 -z-10 bg-[url('/brand/kindearth-watermark-detailed.png')] bg-center bg-no-repeat bg-[length:90%] opacity-[0.08]"
+        />
         <Navbar />
         <main className="min-h-screen">
           {children}

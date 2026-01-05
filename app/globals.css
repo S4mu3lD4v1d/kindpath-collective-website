@@ -14,8 +14,10 @@
   --kp-slate-rgb: 43 50 54;
   --kp-mist:#f6f3ec;
   --kp-mist-rgb: 246 243 236;
-  --kp-ink:#111714;
-  --kp-ink-rgb: 17 23 20;
+  --kp-ink:#1b2b1f;
+  --kp-ink-rgb: 27 43 31;
+  --kp-ink-soft: rgba(27, 43, 31, 0.78);
+  --kp-ink-muted: rgba(27, 43, 31, 0.62);
   --kp-sand:#F7FBF9;
   --kp-sand-rgb: 247 251 249;
   --kp-veil:#e3f2ef;
@@ -25,13 +27,13 @@
   --kp-slate-700:#3A4247;
   --kp-slate-600:#4C565C;
   --kp-slate-500:#5F6A71;
-  color: var(--kp-ink);
+  color: var(--kp-ink-soft);
   background: var(--kp-mist);
 }
 
 body {
   background: var(--kp-mist);
-  color: var(--kp-ink);
+  color: var(--kp-ink-soft);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
 
@@ -40,7 +42,7 @@ h2,
 h3,
 h4 {
   font-family: var(--font-manrope), var(--font-inter), system-ui, sans-serif;
-  color: var(--kp-forest);
+  color: var(--kp-ink);
 }
 
 a {
@@ -51,8 +53,13 @@ a:hover {
 }
 
 .card {
-  @apply rounded-2xl border bg-white shadow-soft;
+  @apply rounded-2xl border bg-white;
   border-color: var(--kp-veil);
+  box-shadow: 0 10px 24px rgb(var(--kp-forest-rgb) / 0.08);
+}
+
+.shadow-soft {
+  box-shadow: 0 10px 24px rgb(var(--kp-forest-rgb) / 0.08);
 }
 
 .text-slate-500 {

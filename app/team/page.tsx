@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Team() {
   return (
-    <main className="bg-sand">
+    <main>
       <div className="max-w-6xl mx-auto px-4 py-14 space-y-12">
         <header className="text-center space-y-3">
           <p className="text-xs font-semibold text-amber uppercase tracking-wide">Team</p>

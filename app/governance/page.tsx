@@ -7,18 +7,21 @@ export const metadata: Metadata = {
 
 export default function Governance() {
   return (
-    <main className="bg-sand">
+    <main>
       <div className="max-w-6xl mx-auto px-4 py-14 space-y-12">
         <header className="text-center space-y-3">
           <p className="text-xs font-semibold text-amber uppercase tracking-wide">Governance</p>
-          <h1 className="text-4xl font-semibold text-[color:var(--kp-moss)]">Governance & Safeguards</h1>
-          <p className="text-lg text-[color:var(--kp-slate-600)]">
+          <h1 className="text-4xl font-semibold text-[color:var(--kp-ink)]">Governance & Safeguards</h1>
+          <p className="text-lg text-[color:var(--kp-ink-soft)]">
             KindPath is sovereignty-first by design. Consent, refusal, data ownership, and interpretability are structural requirements.
+          </p>
+          <p className="text-sm text-[color:var(--kp-ink-muted)]">
+            We don&apos;t build surveillance tools. We don&apos;t score people. Consent and refusal are structural. Communities retain ownership and interpretive authority.
           </p>
         </header>
 
         <section className="space-y-6">
-          <h2 className="text-2xl font-semibold text-[color:var(--kp-moss)]">Non-negotiables</h2>
+          <h2 className="text-2xl font-semibold text-[color:var(--kp-ink)]">Non-negotiables</h2>
           <div className="grid gap-4 md:grid-cols-2">
             {[
               { title: 'Informed Consent', body: 'Consent is informed, specific, revocable, and recorded.' },
@@ -29,18 +32,18 @@ export default function Governance() {
               { title: 'Auditable Exports', body: 'Exports are auditable and portable.' },
             ].map((item) => (
               <div key={item.title} className="card p-5 shadow-none border-[color:var(--kp-fog)]">
-                <h3 className="font-semibold text-[color:var(--kp-moss)] mb-1">{item.title}</h3>
-                <p className="text-sm text-[color:var(--kp-slate-700)]">{item.body}</p>
+                <h3 className="font-semibold text-[color:var(--kp-ink)] mb-1">{item.title}</h3>
+                <p className="text-sm text-[color:var(--kp-ink-soft)]">{item.body}</p>
               </div>
             ))}
           </div>
         </section>
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-[color:var(--kp-moss)]">Governance Documentation</h2>
+          <h2 className="text-2xl font-semibold text-[color:var(--kp-ink)]">Governance Documentation</h2>
           <div className="grid gap-3 md:grid-cols-3">
             {['Data Sovereignty Policy', 'Consent & Refusal Framework', 'Ethics Boundaries'].map((doc) => (
-              <div key={doc} className="card p-4 text-center text-sm font-semibold text-[color:var(--kp-moss)] shadow-none border-[color:var(--kp-fog)]">
+              <div key={doc} className="card p-4 text-center text-sm font-semibold text-[color:var(--kp-ink)] shadow-none border-[color:var(--kp-fog)]">
                 {doc}
               </div>
             ))}

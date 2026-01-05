@@ -28,6 +28,18 @@ To build the project for production:
 npm run build
 ```
 
+If you want a quieter build (skips lint and typecheck output), run:
+
+```bash
+npm run build:quiet
+```
+
+To run type checking separately (recommended for CI):
+
+```bash
+npm run typecheck
+```
+
 ## Lint
 
 To run ESLint:
