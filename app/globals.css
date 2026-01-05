@@ -18,11 +18,11 @@
   --kp-ink-rgb: 27 43 31;
   --kp-ink-soft: rgba(27, 43, 31, 0.78);
   --kp-ink-muted: rgba(27, 43, 31, 0.62);
-  --kp-panel: rgba(255, 255, 255, 0.55);
-  --kp-panel-border: rgba(0, 0, 0, 0.08);
-  --kp-shadow: 0 12px 30px rgba(27, 43, 31, 0.08);
+  --kp-panel: rgba(255, 255, 255, 0.42);
+  --kp-panel-border: rgba(0, 0, 0, 0.06);
+  --kp-shadow: 0 10px 26px rgba(27, 43, 31, 0.06);
   --kp-watermark-url: url('/brand/kindearth-watermark-detailed.png');
-  --kp-watermark-opacity: 0.12;
+  --kp-watermark-opacity: 0.16;
   --kp-sand:#F7FBF9;
   --kp-sand-rgb: 247 251 249;
   --kp-veil:#e3f2ef;
@@ -60,7 +60,7 @@ body::after {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(180deg, rgba(246, 243, 236, 0.6), rgba(246, 243, 236, 0.4));
+  background: linear-gradient(180deg, rgba(246, 243, 236, 0.25), rgba(246, 243, 236, 0.18));
   pointer-events: none;
 }
 

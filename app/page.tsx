@@ -73,11 +73,10 @@ export default function Home() {
             <div className="flex items-center justify-center gap-6">
               <div className="hidden sm:flex flex-col items-center gap-2">
                 <img
-                  src="/brand/kp-collective-mark.svg"
-                  alt="KindPath Collective mark"
-                  className="h-14 w-14 opacity-90"
+                  src="/brand/kp-foundation-mark.svg"
+                  alt="KindPath Foundation mark"
+                  className="h-24 w-24 opacity-90"
                 />
-                <span className="text-xs text-[color:var(--kp-ink-muted)]">KindPath Collective</span>
               </div>
               <div className="text-center">
                 <h2 className="text-2xl sm:text-3xl font-semibold text-[color:var(--kp-ink)]">
@@ -91,9 +90,8 @@ export default function Home() {
                 <img
                   src="/brand/kindearth-mark.svg"
                   alt="KindEarth mark"
-                  className="h-14 w-14 opacity-90"
+                  className="h-24 w-24 opacity-90"
                 />
-                <span className="text-xs text-[color:var(--kp-ink-muted)]">KindEarth</span>
               </div>
             </div>
           </header>

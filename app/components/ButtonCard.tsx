@@ -13,8 +13,8 @@ export default function ButtonCard({ href, title, description, className }: Butt
       href={href}
       className={[
         'group flex h-full flex-col justify-between gap-2 rounded-xl border',
-        'border-[color:var(--kp-panel-border)] bg-white/50 px-4 py-3 text-left',
-        'transition hover:border-black/20 hover:bg-white/65',
+        'border-[color:var(--kp-panel-border)] bg-[color:var(--kp-panel)] px-4 py-3 text-left',
+        'transition hover:border-black/15 hover:bg-white/50',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-forest/40',
         'focus-visible:ring-offset-2 focus-visible:ring-offset-[color:var(--kp-mist)]',
         className,
